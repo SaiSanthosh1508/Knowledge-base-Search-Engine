@@ -12,6 +12,7 @@ from utils import get_references_from_response, plot_sources_on_pdf
 import random
 import json
 
+API_URL = "https://knowledge-base-search-engine-0zb9.onrender.com"
 TEMP_DIR = "temp_upload_dir"
 TEMP_IMAGE_DIR = "temp_images"
 files_exists = False
@@ -104,7 +105,7 @@ async def query_rag_engine(query: str):
         image_paths = plot_sources_on_pdf(TEMP_IMAGE_DIR, json_response)
         
         # Convert paths to URLs for frontend
-        image_urls = [f"/temp_images/{os.path.basename(path)}" for path in image_paths]
+        image_urls = [f"{API_URL}/temp_images/{os.path.basename(path)}" for path in image_paths]
         
         return {
             "answer": answer,
