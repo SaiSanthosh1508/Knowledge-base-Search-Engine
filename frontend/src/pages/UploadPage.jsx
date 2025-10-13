@@ -38,7 +38,7 @@ export default function UploadPage() {
   const handleReset = async () => {
     setIsResetting(true);
     try {
-      const response = await fetch('http://localhost:8000/reset/', {
+      const response = await fetch('https://knowledge-base-search-engine-0zb9.onrender.com/reset/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

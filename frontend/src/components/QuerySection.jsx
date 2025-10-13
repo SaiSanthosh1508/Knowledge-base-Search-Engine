@@ -21,7 +21,7 @@ export default function QuerySection() {
     setResponse(null);
 
     try {
-      const res = await fetch(`/query/?query=${encodeURIComponent(query.trim())}`, {
+      const res = await fetch(`https://knowledge-base-search-engine-0zb9.onrender.com/query/?query=${encodeURIComponent(query.trim())}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -41,15 +41,13 @@ app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://myapp-frontend.onrender.com",
-        "https://myapp-frontend.vercel.app",
-        "http://localhost:3000",
-        "http://localhost:5173"
+        "*"
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 app.mount("/temp_images", StaticFiles(directory=TEMP_IMAGE_DIR), name="temp_images")
 

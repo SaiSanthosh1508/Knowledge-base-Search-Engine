@@ -27,7 +27,7 @@ const UploadButton = ({ files, onUploadSuccess, onUploadStart, onUploadError }) 
     Array.from(files).forEach(file => formData.append('files', file));
 
     try {
-      const response = await fetch('/uploadfile/', {
+      const response = await fetch('https://knowledge-base-search-engine-0zb9.onrender.com/uploadfile/', {
         method: 'POST',
         body: formData,
       });
