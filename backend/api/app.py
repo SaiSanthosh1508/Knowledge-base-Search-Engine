@@ -41,8 +41,8 @@ app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://knowledge-base-search-engine-theta.vercel.app/",
-        "https://localhost:5173"
+        "https://knowledge-base-search-engine-theta.vercel.app",
+        "http://localhost:5173"
     ],
     allow_credentials=True,
     allow_methods=["*"],
