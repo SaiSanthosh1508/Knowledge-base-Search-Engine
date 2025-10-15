@@ -5,6 +5,9 @@ A full-stack Retrieval-Augmented Generation (RAG) system for intelligent documen
 🚀 Live Demo: <br><br>
 [https://knowledge-base-search-engine-theta.vercel.app/](https://knowledge-base-search-engine-theta.vercel.app/)
 
+⚠️ **NOTE:** You might sometimes experience issues due to the limitations of Render's free tier. If this happens, please reload the website and try again.
+
+
 ### View Application Working<br>
 https://github.com/user-attachments/assets/e9107248-19fc-4ed5-962d-faf13664cec5
 
